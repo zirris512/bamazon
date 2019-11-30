@@ -50,10 +50,23 @@ connection.query('SELECT * FROM products', function(err, res) {
         if(!chosenItem) {
             return console.log('Invalid Item ID');
         }
-        updateItem(chosenItem);
+        else if(chosenItem.stock_quantity < response.quantity) {
+            return console.log('Quantity ordered is greater than quantity available');
+        }
+        else {
+            updateItem(chosenItem, response.quantity);
+        }
     });
 });
 
-const updateItem = item => {
-
-}
+const updateItem = (item, quantity) => {
+    connection.query('UPDATE products SET ? WHERE ?',
+    [{ stock_quantity: (item.stock_quantity - quantity )}, { item_id: item.item_id }], function(err) {
+        if(err) throw err;
+        console.log('\nItem purchased successfully!\n');
+        connection.query('SELECT * FROM products WHERE ?', [{ item_id: item.item_id }], function(err, res) {
+            if(err) throw err;
+            console.log(res);
+        })
+    });
+};
