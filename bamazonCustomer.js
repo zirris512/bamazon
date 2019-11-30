@@ -38,7 +38,7 @@ connection.query('SELECT * FROM products', function(err, res) {
             message: 'How many would you like to purchase?',
             name: 'quantity',
             validate: function (value) {
-                if(isNaN(value) === false && parseInt(value) > 0 && parseInt(value) <= 100) {
+                if(isNaN(value) === false && parseInt(value) > 0) {
                     return true;
                 }
                 else {
