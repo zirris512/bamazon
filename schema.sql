@@ -17,7 +17,7 @@ INSERT INTO products(item_id, product_name, department_name, price, stock_quanti
     (3452, 'Laptop', 'Electronics', 1999.99, 44),
     (7755, 'Aleve', 'Pharmacy', 4.99, 65),
     (8321, 'Goldfish Crackers', 'Food&Bev', 3.99, 74),
-    (3948, 'Super Mario', 'Electronics', 49.99, 40),
+    (3948, 'Super Mario', 'Electronics', 49.99, 4),
     (8890, 'Corn Chips', 'Food&Bev', 1.99, 70),
     (9445, 'Blanket', 'General', 89.99, 20),
     (5322, 'Clue', 'Toys', 14.99, 20),
