@@ -11,7 +11,13 @@ const connection = mysql.createConnection({
 
 connection.query('SELECT * FROM products', function(err, res) {
     if(err) throw err;
-    console.log(res);
+    for(let i = 0; i < res.length; i++) {
+        console.log(`
+    ID: ${res[i].item_id}
+    Product Name: ${res[i].product_name}
+    Quantity: ${res[i].stock_quantity}
+    Price: ${res[i].price}`)
+    }
 
     inquirer.prompt([
         {
@@ -66,7 +72,13 @@ const updateItem = (item, quantity) => {
         console.log('\nItem purchased successfully!\n');
         connection.query('SELECT * FROM products WHERE ?', [{ item_id: item.item_id }], function(err, res) {
             if(err) throw err;
-            console.log(res);
+            let total = item.price * quantity;
+            console.log(`Your total was $${total}\n`);
+            console.log(`
+    ID: ${res[0].item_id}
+    Product Name: ${res[0].product_name}
+    Quantity: ${res[0].stock_quantity}
+    Price: ${res[0].price}`)
         })
     });
 };
