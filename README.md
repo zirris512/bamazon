@@ -12,3 +12,12 @@ A node app where the user could order items as a customer or update items as a m
 
 ## Technologies
 
+* Javascript
+* JQuery
+* Node.js
+* Inquirer
+* MySQL
+
+## License & Copyright
+
+&copy; Brent Edwards
