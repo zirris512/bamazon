@@ -12,7 +12,7 @@ A node app where the user could order items as a customer or update items as a m
 
 ## Links
 
-[Youtube Video - https://youtu.be/YKHXxkXWlh0](https://youtu.be/YKHXxkXWlh0)
+Youtube Video - [https://youtu.be/YKHXxkXWlh0](https://youtu.be/YKHXxkXWlh0)
 
 ## Screenshots
 
