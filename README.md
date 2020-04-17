@@ -10,6 +10,10 @@ A node app where the user could order items as a customer or update items as a m
 * Inquirer
 * MySQL
 
+## Links
+
+[Youtube Video](https://youtu.be/YKHXxkXWlh0)
+
 ## Screenshots
 
 ![Customer](/Images/Bamazon.png)
