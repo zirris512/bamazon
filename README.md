@@ -4,11 +4,11 @@ A node app where the user could order items as a customer or update items as a m
 
 ## Screenshots
 
-![Customer](/images/Bamazon.png)
+![Customer](/Images/Bamazon.png)
 
-![Manager-1](/images/BamazonManager1.png)
+![Manager-1](/Images/BamazonManager1.png)
 
-![Manager-2](/images/BamazonManager2.png)
+![Manager-2](/Images/BamazonManager2.png)
 
 ## Technologies
 
